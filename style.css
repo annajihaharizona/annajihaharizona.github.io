@@ -1180,7 +1180,7 @@ footer { background: #0f1f0f; color: var(--putih); padding: 64px 5% 32px; }
   width: 64px; height: 64px;
   border-radius: 16px;
   overflow: hidden;
-  background: rgba(255,255,255,0.2);
+  background: rgba(255,255,255,0.95);
   flex-shrink: 0;
   padding: 6px;
   min-width: 64px;

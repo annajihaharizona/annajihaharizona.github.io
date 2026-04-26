@@ -1209,29 +1209,36 @@ footer { background: #0f1f0f; color: var(--putih); padding: 64px 5% 32px; }
 @media (max-width: 480px) {
   .hero { padding: 100px 4% 60px; }
 
-  /* judul lebih besar */
-  .hero h1 { font-size: clamp(32px, 8vw, 48px) !important; }
+  /* judul segedean tombol */
+  .hero h1 { font-size: clamp(36px, 9vw, 52px) !important; }
+  .highlight-yellow, .highlight-green { 
+    padding: 2px 10px; 
+    border-radius: 8px;
+  }
 
-  /* tombol sejajar */
+  /* tombol sejajar & selebar judul */
   .hero-btns { flex-direction: row; flex-wrap: nowrap; gap: 10px; }
   .btn-primary, .btn-ghost { 
     flex: 1; 
     text-align: center; 
-    padding: 12px 10px;
+    padding: 13px 8px;
     font-size: 13px;
   }
 
-  /* stat 3 sejajar */
+  /* stat 3 sejajar penuh */
   .hero-stats { 
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 8px;
+    width: 100%;
   }
   .stat-bubble { 
     min-width: unset;
-    padding: 12px 6px; 
+    width: 100%;
+    padding: 14px 8px;
+    border-radius: 16px;
   }
-  .stat-num { font-size: 20px; }
+  .stat-num { font-size: 22px; }
   .stat-plus { font-size: 16px; }
   .stat-label { font-size: 9px; }
 }

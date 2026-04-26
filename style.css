@@ -1208,10 +1208,30 @@ footer { background: #0f1f0f; color: var(--putih); padding: 64px 5% 32px; }
 
 @media (max-width: 480px) {
   .hero { padding: 100px 4% 60px; }
-  .hero-btns { flex-direction: column; }
-  .btn-primary, .btn-ghost { text-align: center; }
-  .hero-stats { gap: 8px; }
-  .stat-bubble { min-width: 80px; padding: 12px 10px; }
-  .stat-num { font-size: 22px; }
-  .stat-label { font-size: 10px; }
+
+  /* judul lebih besar */
+  .hero h1 { font-size: clamp(32px, 8vw, 48px) !important; }
+
+  /* tombol sejajar */
+  .hero-btns { flex-direction: row; flex-wrap: nowrap; gap: 10px; }
+  .btn-primary, .btn-ghost { 
+    flex: 1; 
+    text-align: center; 
+    padding: 12px 10px;
+    font-size: 13px;
+  }
+
+  /* stat 3 sejajar */
+  .hero-stats { 
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+  }
+  .stat-bubble { 
+    min-width: unset;
+    padding: 12px 6px; 
+  }
+  .stat-num { font-size: 20px; }
+  .stat-plus { font-size: 16px; }
+  .stat-label { font-size: 9px; }
 }

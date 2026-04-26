@@ -1205,3 +1205,13 @@ footer { background: #0f1f0f; color: var(--putih); padding: 64px 5% 32px; }
   object-fit: contain;
   display: block;
 }
+
+@media (max-width: 480px) {
+  .hero { padding: 100px 4% 60px; }
+  .hero-btns { flex-direction: column; }
+  .btn-primary, .btn-ghost { text-align: center; }
+  .hero-stats { gap: 8px; }
+  .stat-bubble { min-width: 80px; padding: 12px 10px; }
+  .stat-num { font-size: 22px; }
+  .stat-label { font-size: 10px; }
+}

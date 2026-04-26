@@ -70,17 +70,17 @@ async function submitForm() {
   }
 
   // ===== KIRIM KE GOOGLE SHEET =====
-  const SHEET_URL = 'https://link.sheet'; // ganti dengan URL Apps Script deploy
-  try {
-    await fetch(SHEET_URL, {
-      method: 'POST',
-      mode: 'no-cors',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ namaOrtu, namaAnak, umur, unit, pesan })
-    });
-  } catch (e) {
-    console.error('Gagal kirim ke sheet:', e);
-  }
+  // const SHEET_URL = 'https://link.sheet'; // ganti dengan URL Apps Script deploy
+  // try {
+  //   await fetch(SHEET_URL, {
+  //     method: 'POST',
+  //     mode: 'no-cors',
+  //     headers: { 'Content-Type': 'application/json' },
+  //     body: JSON.stringify({ namaOrtu, namaAnak, umur, unit, pesan })
+  //   });
+  // } catch (e) {
+  //   console.error('Gagal kirim ke sheet:', e);
+  // }
 
   // ===== REDIRECT KE WHATSAPP =====
   const NOMOR_WA = '6281274340915';
